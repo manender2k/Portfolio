@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import profilePic from "./assets/Manender_PFP.jpeg"; // Make sure to place a profile.jpg in assets
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 const roles = [
   "Software Engineer",
@@ -115,7 +116,7 @@ export default function App() {
           </motion.div>
         </div>
       </section>
-
+      <Experience></Experience>
       <Skills></Skills>
 
       <section id="education" className="h-screen flex flex-col items-center justify-center p-10">
