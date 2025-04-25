@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
 
 function App() {
 
   return (
     <>
-      <div>Manender</div>
+      <div className='text-amber-300 font-semibold'>Manender</div>
     </>
   )
 }
