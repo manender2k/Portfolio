@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import profilePic from "./assets/Manender_PFP.jpeg"; // Make sure to place a profile.jpg in assets
+import Skills from "./Skills";
 
 const roles = [
   "Software Engineer",
@@ -115,28 +116,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="skills" className="h-screen p-10 flex items-center justify-center bg-[#111827]">
-        <motion.div
-          className="max-w-5xl w-full"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          <h3 className="text-3xl font-bold text-indigo-400 mb-6">Skills</h3>
-          <div className="flex overflow-x-auto space-x-6 py-4 scrollbar-hide">
-            {["JavaScript", "TypeScript", "React", "Node.js", "MongoDB", "Express", "Angular", "Java"].map((skill, idx) => (
-              <motion.div
-                key={idx}
-                className="flex-shrink-0 bg-gray-800 text-white px-6 py-4 rounded-xl text-center shadow-md hover:shadow-indigo-500/50 min-w-[150px]"
-                whileHover={{ scale: 1.1 }}
-              >
-                {skill}
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
+      <Skills></Skills>
 
       <section id="education" className="h-screen flex flex-col items-center justify-center p-10">
         <motion.h3
