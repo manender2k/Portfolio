@@ -49,7 +49,7 @@ export default function About() {
             Whether it's building modern web apps or exploring new frameworks, I enjoy crafting scalable solutions that create impact.
           </p>
           <p>
-            My core strength lies in <span className="text-indigo-300 font-semibold">JavaScript</span> and the <span className="text-indigo-300 font-semibold">MERN/MEAN stack</span>. I love to explore full-stack development and continuously learn emerging technologies.
+            My core strength lies in <span className="text-indigo-300 font-semibold">JavaScript, Java</span> and the <span className="text-indigo-300 font-semibold">MERN/MEAN stack</span>. I love to explore full-stack development and continuously learn emerging technologies.
           </p>
           <p>
             I’m always open to exciting job opportunities and collaborative projects that challenge my skills and fuel my curiosity.

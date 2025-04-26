@@ -1,63 +1,166 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  FaReact,
-  FaNodeJs,
-  FaAngular,
-  FaJs,
-  FaDatabase,
   FaHtml5,
   FaCss3Alt,
-  FaGitAlt,
+  FaReact,
+  FaAngular,
+  FaNodeJs,
   FaJava,
+  FaPython,
+  FaDatabase,
+  FaGitAlt,
+  FaDocker,
+  FaJenkins,
+  FaLinux,
 } from "react-icons/fa";
+import {
+  SiReact,
+  SiRedux,
+  SiTypescript,
+  SiSpringboot,
+  SiPostgresql,
+  SiMongodb,
+  SiSwagger,
+  SiGraphql,
+  SiTailwindcss,
+  SiVite,
+  SiApachekafka,
+  SiPostman,
+} from "react-icons/si";
 
 export default function Skills() {
-  
   const categories = [
     {
       title: "Frontend",
       skills: [
-        { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-4xl mb-2" /> },
-        { name: "CSS", icon: <FaCss3Alt className="text-blue-500 text-4xl mb-2" /> },
-        { name: "JavaScript", icon: <FaJs className="text-yellow-400 text-4xl mb-2" /> },
-        { name: "React", icon: <FaReact className="text-cyan-400 text-4xl mb-2" /> },
-        { name: "Angular", icon: <FaAngular className="text-red-500 text-4xl mb-2" /> },
-        { name: "React", icon: <FaReact className="text-cyan-400 text-4xl mb-2" /> },
-        { name: "Angular", icon: <FaAngular className="text-red-500 text-4xl mb-2" /> },
-        { name: "React", icon: <FaReact className="text-cyan-400 text-4xl mb-2" /> },
-        { name: "Angular", icon: <FaAngular className="text-red-500 text-4xl mb-2" /> },
+        {
+          name: "HTML5",
+          icon: <FaHtml5 className="text-orange-500 text-4xl mb-2" />,
+        },
+        {
+          name: "CSS3",
+          icon: <FaCss3Alt className="text-blue-500 text-4xl mb-2" />,
+        },
+        {
+          name: "ReactJS",
+          icon: <FaReact className="text-cyan-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Redux",
+          icon: <SiRedux className="text-purple-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Angular",
+          icon: <FaAngular className="text-red-500 text-4xl mb-2" />,
+        },
+        {
+          name: "React Native",
+          icon: <SiReact className="text-cyan-200 text-4xl mb-2" />,
+        },
+        {
+          name: "Storybook",
+          icon: <FaReact className="text-pink-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Bootstrap",
+          icon: <FaCss3Alt className="text-indigo-400 text-4xl mb-2" />,
+        },
+        {
+          name: "TailwindCSS",
+          icon: <SiTailwindcss className="text-sky-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Vite",
+          icon: <SiVite className="text-purple-300 text-4xl mb-2" />,
+        },
       ],
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl mb-2" /> },
-        { name: "Express", icon: <FaNodeJs className="text-gray-300 text-4xl mb-2" /> },
-        { name: "MongoDB", icon: <FaDatabase className="text-green-400 text-4xl mb-2" /> },
-        { name: "Java", icon: <FaJava className="text-red-500 text-4xl mb-2" /> },
-        { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl mb-2" /> },
-        { name: "Express", icon: <FaNodeJs className="text-gray-300 text-4xl mb-2" /> },
-        { name: "MongoDB", icon: <FaDatabase className="text-green-400 text-4xl mb-2" /> },
-        { name: "Java", icon: <FaJava className="text-red-500 text-4xl mb-2" /> },
+        {
+          name: "Node.js",
+          icon: <FaNodeJs className="text-green-500 text-4xl mb-2" />,
+        },
+        {
+          name: "Express.js",
+          icon: <FaNodeJs className="text-gray-300 text-4xl mb-2" />,
+        },
+        {
+          name: "Spring Boot",
+          icon: <SiSpringboot className="text-green-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Java",
+          icon: <FaJava className="text-red-500 text-4xl mb-2" />,
+        },
+        {
+          name: "Python",
+          icon: <FaPython className="text-yellow-400 text-4xl mb-2" />,
+        },
+        {
+          name: "GraphQL",
+          icon: <SiGraphql className="text-pink-400 text-4xl mb-2" />,
+        },
+        {
+          name: "WebSockets",
+          icon: <SiGraphql className="text-blue-400 text-4xl mb-2" />,
+        },
+        {
+          name: "MySQL",
+          icon: <FaDatabase className="text-blue-400 text-4xl mb-2" />,
+        },
+        {
+          name: "PostgreSQL",
+          icon: <SiPostgresql className="text-indigo-400 text-4xl mb-2" />,
+        },
+        {
+          name: "MongoDB",
+          icon: <SiMongodb className="text-green-400 text-4xl mb-2" />,
+        },
       ],
     },
     {
-      title: "Other",
+      title: "Other / Tools",
       skills: [
-        { name: "Git", icon: <FaGitAlt className="text-orange-400 text-4xl mb-2" /> },
-        { name: "TypeScript", icon: <FaJs className="text-blue-400 text-4xl mb-2" /> },
-        { name: "Git", icon: <FaGitAlt className="text-orange-400 text-4xl mb-2" /> },
-        { name: "TypeScript", icon: <FaJs className="text-blue-400 text-4xl mb-2" /> },
-        { name: "Git", icon: <FaGitAlt className="text-orange-400 text-4xl mb-2" /> },
-        { name: "TypeScript", icon: <FaJs className="text-blue-400 text-4xl mb-2" /> },
-        { name: "Git", icon: <FaGitAlt className="text-orange-400 text-4xl mb-2" /> },
-        { name: "TypeScript", icon: <FaJs className="text-blue-400 text-4xl mb-2" /> },
+        {
+          name: "Docker",
+          icon: <FaDocker className="text-blue-500 text-4xl mb-2" />,
+        },
+        {
+          name: "Jenkins",
+          icon: <FaJenkins className="text-red-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Kafka",
+          icon: <SiApachekafka className="text-purple-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Git",
+          icon: <FaGitAlt className="text-orange-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Linux",
+          icon: <FaLinux className="text-gray-300 text-4xl mb-2" />,
+        },
+        {
+          name: "Swagger",
+          icon: <SiSwagger className="text-green-400 text-4xl mb-2" />,
+        },
+        {
+          name: "Postman",
+          icon: <SiPostman className="text-orange-400 text-4xl mb-2" />,
+        },
+        {
+          name: "JUnit",
+          icon: <FaJava className="text-green-500 text-4xl mb-2" />,
+        },
       ],
     },
   ];
 
-  const [pausedCategory, setPausedCategory] = useState(null); // Track which category is paused
+  const [pausedCategory, setPausedCategory] = useState(null);
 
   return (
     <section
@@ -86,20 +189,25 @@ export default function Skills() {
               <div
                 className="flex"
                 style={{
-                  animation: `marquee ${category.skills.length * 3}s linear infinite`,
-                  animationPlayState: pausedCategory === catIdx ? "paused" : "running",
+                  animation: `marquee ${
+                    category.skills.length * 3
+                  }s linear infinite`,
+                  animationPlayState:
+                    pausedCategory === catIdx ? "paused" : "running",
                 }}
               >
                 {[...category.skills, ...category.skills].map((skill, idx) => (
                   <motion.div
                     key={idx}
-                    className="group relative min-w-[140px] h-[140px] m-3 bg-gradient-to-tr from-[#1e293b] to-[#0f172a] rounded-2xl overflow-hidden shadow-lg hover:shadow-indigo-500/50 border border-gray-700 hover:border-indigo-400 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer"
+                    className="group relative min-w-[120px] h-[120px] m-3 bg-gradient-to-tr from-[#1e293b] to-[#0f172a] rounded-2xl overflow-hidden shadow-lg hover:shadow-indigo-500/50 border border-gray-700 hover:border-indigo-400 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer"
                   >
                     {/* Glowing corners */}
                     <div className="absolute inset-0 border-2 border-transparent group-hover:border-indigo-400 rounded-2xl animate-border-glow" />
-                    
+
                     {skill.icon}
-                    <span className="text-white text-sm font-medium mt-2">{skill.name}</span>
+                    <span className="text-white text-sm font-medium mt-2">
+                      {skill.name}
+                    </span>
 
                     {/* Light shimmer on hover */}
                     <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
