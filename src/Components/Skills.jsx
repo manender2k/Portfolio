@@ -187,16 +187,21 @@ export default function Skills() {
               onMouseLeave={() => setPausedCategory(null)}
             >
               <div
-                className="flex"
+                className={`flex ${
+                  category.skills.length > 5
+                    ? "animate-marquee"
+                    : "flex-wrap justify-center"
+                } px-4 sm:px-8 max-w-full sm:max-w-5xl mx-auto`}
                 style={{
-                  animation: `marquee ${
-                    category.skills.length * 3
-                  }s linear infinite`,
+                  animationDuration: `${category.skills.length * 2}s`,
                   animationPlayState:
                     pausedCategory === catIdx ? "paused" : "running",
                 }}
               >
-                {[...category.skills, ...category.skills].map((skill, idx) => (
+                {[
+                  ...category.skills,
+                  ...(category.skills.length > 5 ? category.skills : []),
+                ].map((skill, idx) => (
                   <motion.div
                     key={idx}
                     className="group relative min-w-[120px] h-[120px] m-3 bg-gradient-to-tr from-[#1e293b] to-[#0f172a] rounded-2xl overflow-hidden shadow-lg hover:shadow-indigo-500/50 border border-gray-700 hover:border-indigo-400 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer"
@@ -219,7 +224,7 @@ export default function Skills() {
               <style>{`
                 @keyframes marquee {
                   0% { transform: translateX(0); }
-                  100% { transform: translateX(-50%); }
+                  100% { transform: translateX(-100%); }
                 }
                 @keyframes border-glow {
                   0% {
@@ -231,6 +236,10 @@ export default function Skills() {
                   100% {
                     box-shadow: 0 0 0px rgba(99, 102, 241, 0.5);
                   }
+                }
+                .animate-marquee {
+                  animation: marquee linear infinite;
+                  white-space: nowrap;
                 }
                 .animate-border-glow {
                   animation: border-glow 3s infinite;
