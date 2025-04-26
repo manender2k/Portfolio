@@ -1,12 +1,11 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
   opacity: 0;
 }
 
 .accordion-content.open {
-  max-height: 300px;
-  /* Adjust based on content length */
+  max-height: 1000px; /* Big enough to fit any content dynamically */
   opacity: 1;
 }
