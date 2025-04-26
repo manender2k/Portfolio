@@ -22,7 +22,7 @@ export default function App() {
         <Education />
         {/* <Projects></Projects> */}
         <Contact />
-        <footer className="p-6 text-center text-sm text-violet-200">
+        <footer className="px-4 py-6 text-center text-xs sm:text-sm text-violet-200">
           © {new Date().getFullYear()} Manender. All rights reserved.
         </footer>
       </main>
