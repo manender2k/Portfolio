@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-screen flex flex-col justify-center items-center text-center"
+      className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 md:px-16 py-12 bg-transparent"
     >
       <motion.div
         className="max-w-4xl w-full bg-gradient-to-br from-[#1f2937] to-[#111827] p-12 rounded-2xl shadow-2xl backdrop-blur-sm text-center"

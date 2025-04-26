@@ -119,7 +119,7 @@ function AccordionItem({ idx, activeIndex, toggle, title, content }) {
     <div className="border border-gray-700 rounded-lg overflow-hidden transition-all">
       <button
         onClick={() => toggle(idx)}
-        className={`w-full text-left px-4 sm:px-6 py-4 flex justify-between items-center text-base sm:text-lg font-medium transition-all duration-300 ${
+        className={`cursor-pointer w-full text-left px-4 sm:px-6 py-4 flex justify-between items-center text-base sm:text-lg font-medium transition-all duration-300 ${
           activeIndex === idx
             ? "bg-indigo-500/10 border-b border-indigo-400 text-indigo-300"
             : "bg-gray-850 hover:bg-gray-800 text-gray-300"

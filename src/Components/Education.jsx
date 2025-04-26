@@ -6,7 +6,8 @@ const educationData = [
   {
     id: 1,
     title: "Bachelor of Technology in Computer Science and Engineering",
-    institute: "University School of Information and Communication Technology, Delhi",
+    institute:
+      "University School of Information and Communication Technology, Delhi",
     duration: "2018 - 2022",
     icon: <FaGraduationCap className="text-indigo-500 w-6 h-6" />,
   },
@@ -28,10 +29,15 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section id="education" className="h-screen flex flex-col justify-center items-center text-center">
-      <div className="max-w-3xl w-full">
-        <h2 className="text-3xl font-bold text-indigo-400 mb-12 text-center">Education</h2>
-        <div className="relative border-l-2 border-indigo-400">
+    <section
+      id="education"
+      className="min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-8 py-10"
+    >
+      <div className="max-w-full sm:max-w-3xl w-full mx-auto">
+        <h2 className="text-3xl font-bold text-indigo-400 mb-12 text-center">
+          Education
+        </h2>
+        <div className="relative border-l-2 border-indigo-400 ml-2 sm:ml-4">
           {educationData.map((item, index) => (
             <motion.div
               key={item.id}
@@ -45,7 +51,9 @@ export default function Education() {
                 {item.icon}
               </div>
               <div className="bg-[#1e293b] p-5 rounded-xl shadow-md hover:shadow-indigo-500/50 transition-all duration-300">
-                <h3 className="text-xl text-white font-semibold">{item.title}</h3>
+                <h3 className="text-xl text-white font-semibold">
+                  {item.title}
+                </h3>
                 <p className="text-indigo-300">{item.institute}</p>
                 <p className="text-sm text-gray-400 mt-1">{item.duration}</p>
               </div>
