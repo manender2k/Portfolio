@@ -29,8 +29,8 @@ export default function AnimatedBackground() {
           links: {
             enable: true,
             color: "#6366f1",
-            distance: 130,
-            opacity: 0.4,
+            distance: 150,
+            opacity: 0.7,
             width: 1,
           },
         },
