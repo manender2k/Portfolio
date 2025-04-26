@@ -21,7 +21,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="h-screen p-10 flex flex-col items-center justify-center bg-[#111827]"
+      className="h-screen flex flex-col justify-center items-center text-center"
     >
       <motion.div
         className="max-w-5xl w-full"
