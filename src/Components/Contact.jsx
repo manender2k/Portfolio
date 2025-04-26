@@ -1,50 +1,133 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaTelegramPlane, FaDiscord, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-screen p-10 text-center flex flex-col justify-center"
+      className="h-screen flex flex-col justify-center items-center text-center"
     >
-      <motion.h3
-        className="text-3xl font-bold text-white mb-4"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+      <motion.div
+        className="max-w-4xl w-full bg-gradient-to-br from-[#1f2937] to-[#111827] p-12 rounded-2xl shadow-2xl backdrop-blur-sm text-center"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1 }}
       >
-        Contact Me
-      </motion.h3>
-      <motion.p
-        className="text-gray-400 mb-4"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
-        Have a project in mind or just want to connect? Let's talk!
-      </motion.p>
-      <div className="flex justify-center space-x-6 text-2xl text-gray-300">
-        <a
-          href="https://github.com/yourgithub"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.h3
+          className="text-4xl font-bold text-indigo-400 mb-6 tracking-wider"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/in/yourlinkedin"
-          target="_blank"
-          rel="noopener noreferrer"
+          Contact Me
+        </motion.h3>
+
+        <motion.p
+          className="text-gray-400 text-lg mb-10 leading-relaxed"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4, duration: 0.8 }}
         >
-          <FaLinkedin />
-        </a>
-        <a href="mailto:youremail@example.com">
-          <FaEnvelope />
-        </a>
-      </div>
+          Let's connect! Feel free to reach out through any platform below.  
+          <br />I'm always open for projects, collaborations, or a casual chat!
+        </motion.p>
+
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-4 gap-8 justify-center items-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          {/* Phone */}
+          <a
+            href="tel:+911234567890"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaPhoneAlt size={30} />
+            <span className="mt-2 text-sm">Phone</span>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:youremail@example.com"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaEnvelope size={30} />
+            <span className="mt-2 text-sm">Email</span>
+          </a>
+
+          {/* Telegram */}
+          <a
+            href="https://t.me/yourtelegram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaTelegramPlane size={30} />
+            <span className="mt-2 text-sm">Telegram</span>
+          </a>
+
+          {/* Discord */}
+          <a
+            href="https://discordapp.com/users/yourdiscordid"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaDiscord size={30} />
+            <span className="mt-2 text-sm">Discord</span>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/yourinstagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaInstagram size={30} />
+            <span className="mt-2 text-sm">Instagram</span>
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/yourgithub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaGithub size={30} />
+            <span className="mt-2 text-sm">GitHub</span>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://linkedin.com/in/yourlinkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaLinkedin size={30} />
+            <span className="mt-2 text-sm">LinkedIn</span>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://linkedin.com/in/yourlinkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaLinkedin size={30} />
+            <span className="mt-2 text-sm">LinkedIn</span>
+          </a>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
