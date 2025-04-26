@@ -1,13 +1,13 @@
 import React from "react";
-import Skills from "./Skills";
-import Experience from "./Experience";
-import Education from "./Education";
-import About from "./About";
-import Aurora from "./Aurora.jsx";
-import Projects from "./Projects.jsx";
-import Contact from "./Contact.jsx";
-import Home from "./Home.jsx";
-import Header from "./Header.jsx";
+import Skills from "./Components/Skills.jsx";
+import Experience from "./Components/Experience.jsx";
+import Education from "./Components/Education.jsx";
+import About from "./Components/About.jsx";
+import Aurora from "./Components/Aurora.jsx";
+import Projects from "./Components/Projects.jsx";
+import Contact from "./Components/Contact.jsx";
+import Home from "./Components/Home.jsx";
+import Header from "./Components/Header.jsx";
 
 export default function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profilePic from "./assets/Manender_PFP.jpeg"; // Make sure to place a profile.jpg in assets
+import profilePic from "../assets/Manender_PFP.jpeg"; // Make sure to place a profile.jpg in assets
 
 export default function About() {
   return (
