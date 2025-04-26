@@ -14,15 +14,15 @@ export default function App() {
     <div className="relative">
       <Aurora />
       <main className="relative z-10">
-        <Header></Header>
-        <Home></Home>
-        <About></About>
-        <Experience></Experience>
-        <Skills></Skills>
-        <Education></Education>
+        <Header />
+        <Home />
+        <About />
+        <Experience />
+        <Skills />
+        <Education />
         {/* <Projects></Projects> */}
-        <Contact></Contact>
-        <footer className="p-6 text-center text-sm text-gray-600 mt-10">
+        <Contact />
+        <footer className="p-6 text-center text-sm text-violet-200">
           © {new Date().getFullYear()} Manender. All rights reserved.
         </footer>
       </main>

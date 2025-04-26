@@ -27,7 +27,7 @@ export default function Header() {
           <a
             key={item.href}
             href={item.href}
-            className="relative group px-2 py-1 transition-colors duration-300 hover:text-indigo-400"
+            className="relative group px-2 py-1 transition-colors duration-300 hover:text-indigo-400 font-semibold"
           >
             {item.label}
             <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-indigo-400 transition-all group-hover:w-full"></span>

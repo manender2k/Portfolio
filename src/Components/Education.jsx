@@ -5,23 +5,23 @@ import { FaGraduationCap, FaSchool } from "react-icons/fa";
 const educationData = [
   {
     id: 1,
-    title: "Bachelor of Technology in Computer Science",
-    institute: "XYZ College of Engineering",
-    duration: "2019 - 2023",
+    title: "Bachelor of Technology in Computer Science and Engineering",
+    institute: "University School of Information and Communication Technology, Delhi",
+    duration: "2018 - 2022",
     icon: <FaGraduationCap className="text-indigo-500 w-6 h-6" />,
   },
   {
     id: 2,
     title: "Senior Secondary Education (Science)",
-    institute: "ABC Senior Secondary School",
-    duration: "2017 - 2019",
+    institute: "Chand Ram Public School, Delhi",
+    duration: "2016 - 2018",
     icon: <FaSchool className="text-blue-500 w-6 h-6" />,
   },
   {
     id: 3,
     title: "Secondary Education",
-    institute: "Little Flower High School",
-    duration: "2015 - 2017",
+    institute: "Holy Angel School, Hisar",
+    duration: "2014 - 2016",
     icon: <FaSchool className="text-green-500 w-6 h-6" />,
   },
 ];
