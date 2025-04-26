@@ -1,6 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaTelegramPlane, FaDiscord, FaInstagram } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaTelegramPlane,
+  FaDiscord,
+  FaInstagram,
+  FaFacebook,
+} from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -32,8 +41,9 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Let's connect! Feel free to reach out through any platform below.  
-          <br />I'm always open for projects, collaborations, or a casual chat!
+          Let's connect! Feel free to reach out through any platform below.
+          <br />
+          I'm always open for projects, collaborations, or a casual chat!
         </motion.p>
 
         <motion.div
@@ -45,7 +55,7 @@ export default function Contact() {
         >
           {/* Phone */}
           <a
-            href="tel:+911234567890"
+            href="tel:+919306233770"
             className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
           >
             <FaPhoneAlt size={30} />
@@ -54,16 +64,46 @@ export default function Contact() {
 
           {/* Email */}
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:manender.bamel2k@gmail.com"
             className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
           >
             <FaEnvelope size={30} />
             <span className="mt-2 text-sm">Email</span>
           </a>
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/manender-1605881a0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaLinkedin size={30} />
+            <span className="mt-2 text-sm">LinkedIn</span>
+          </a>
+          {/* GitHub */}
+          <a
+            href="https://github.com/manender2k"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaGithub size={30} />
+            <span className="mt-2 text-sm">GitHub</span>
+          </a>
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/manender2k"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
+          >
+            <FaInstagram size={30} />
+            <span className="mt-2 text-sm">Instagram</span>
+          </a>
 
           {/* Telegram */}
           <a
-            href="https://t.me/yourtelegram"
+            href="https://t.me/manendersensei"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
@@ -74,7 +114,7 @@ export default function Contact() {
 
           {/* Discord */}
           <a
-            href="https://discordapp.com/users/yourdiscordid"
+            href="https://discordapp.com/users/mandyplay"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
@@ -83,48 +123,15 @@ export default function Contact() {
             <span className="mt-2 text-sm">Discord</span>
           </a>
 
-          {/* Instagram */}
+          {/* Facebook */}
           <a
-            href="https://instagram.com/yourinstagram"
+            href="https://www.facebook.com/manender.bamel"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
           >
-            <FaInstagram size={30} />
-            <span className="mt-2 text-sm">Instagram</span>
-          </a>
-
-          {/* GitHub */}
-          <a
-            href="https://github.com/yourgithub"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
-          >
-            <FaGithub size={30} />
-            <span className="mt-2 text-sm">GitHub</span>
-          </a>
-
-          {/* LinkedIn */}
-          <a
-            href="https://linkedin.com/in/yourlinkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
-          >
-            <FaLinkedin size={30} />
-            <span className="mt-2 text-sm">LinkedIn</span>
-          </a>
-
-          {/* LinkedIn */}
-          <a
-            href="https://linkedin.com/in/yourlinkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-indigo-400 transition-transform transform hover:scale-110 duration-300 flex flex-col items-center"
-          >
-            <FaLinkedin size={30} />
-            <span className="mt-2 text-sm">LinkedIn</span>
+            <FaFacebook size={30} />
+            <span className="mt-2 text-sm">Facebook</span>
           </a>
         </motion.div>
       </motion.div>
