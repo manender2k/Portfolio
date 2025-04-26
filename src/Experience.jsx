@@ -27,11 +27,19 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className="h-screen flex flex-col justify-center items-center text-center">
-      <h2 className="text-4xl font-bold text-indigo-400 mb-8 text-center">Experience</h2>
+    <section
+      id="experience"
+      className="h-screen flex flex-col justify-center items-center text-center"
+    >
+      <h2 className="text-4xl font-bold text-indigo-400 mb-8 text-center">
+        Experience
+      </h2>
       <div className="max-w-3xl mx-auto space-y-4">
         {experiences.map((exp, idx) => (
-          <div key={idx} className="border border-gray-700 rounded-lg overflow-hidden transition-all">
+          <div
+            key={idx}
+            className="border border-gray-700 rounded-lg overflow-hidden transition-all"
+          >
             <button
               onClick={() => toggle(idx)}
               className={`w-full text-left px-6 py-4 flex justify-between items-center text-lg font-medium transition-all duration-300 ${
@@ -50,7 +58,9 @@ export default function Experience() {
               </span>
             </button>
             <div
-              className={`accordion-content ${activeIndex === idx ? "open" : ""}`}
+              className={`accordion-content ${
+                activeIndex === idx ? "open" : ""
+              }`}
             >
               <div className="px-6 py-4 text-gray-300 bg-gray-850 border-t border-gray-700">
                 {exp.content}

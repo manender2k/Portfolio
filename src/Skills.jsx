@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaAngular, FaJs, FaDatabase } from 'react-icons/fa'; // Example icons
+import { FaReact, FaNodeJs, FaAngular, FaJs, FaDatabase } from "react-icons/fa"; // Example icons
 
 export default function Skills() {
   const [paused, setPaused] = useState(false);
@@ -52,7 +52,9 @@ export default function Skills() {
                 <div className="flex justify-center items-center">
                   {skill.icon}
                 </div>
-                <span className="text-white text-sm font-medium">{skill.name}</span>
+                <span className="text-white text-sm font-medium">
+                  {skill.name}
+                </span>
               </motion.div>
             ))}
           </div>

@@ -6,6 +6,7 @@
 }
 
 .accordion-content.open {
-  max-height: 300px; /* Adjust based on content length */
+  max-height: 300px;
+  /* Adjust based on content length */
   opacity: 1;
 }
